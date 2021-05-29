@@ -9,9 +9,32 @@ function calculandoIMC () {
     let resultado = document.getElementById('resultado')
 
     let imc = peso/(altura*altura)
+    let mensagem = ""
+    imc = imc.toFixed(1)
 
 
-    resultado.textContent = `Seu IMC é ${imc}`
+    if(imc <= 18){  
+        mensagem = "Cuidado. Você está Abaixo do peso."
+
+    } else if (imc <= 24.9) {
+        mensagem = "Parabéns! Você está com o peso ideal."
+
+    } else if (imc <= 29.9) {
+        mensagem = "Cuidado. Você está com sobrepeso."
+
+    } else if (imc <= 34.9) {
+        mensagem = "Você tem grau de obesidade 1."
+
+    } else if (imc <= 39.9) {
+        mensagem = "Você tem grau de obesidade 2."
+
+    } else {
+        mensagem = "Você tem grau de obesidade 3."
+
+
+    }
+
+    resultado.textContent = `Seu IMC é ${imc}. ${mensagem}`
 
     
 
