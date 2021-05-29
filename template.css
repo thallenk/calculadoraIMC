@@ -1,0 +1,47 @@
+h1{
+	/* adicionando espaço de 20 pixels a esquerda do titulo h1.*/
+	margin-left: 20px;
+	}
+.container {
+	/*adicionando borda*/
+	margin-left: 20px;
+	border: 2px solid black;
+	box-shadow: 0px 0px 10px;
+	/*da margem ao redor de todo o conteúdo do container*/
+	margin-left: 20px;
+	padding: 15px;
+	/* aumenta a altura da caixinha*/
+	height: 450px;
+	text-align: center; 
+	margin: auto;
+	}
+	.container-calculadora-peso, .container-calculadora-altura{
+		margin-bottom: 16px;
+		width: 100%;
+		background-color: #ddd;
+	}
+	.peso-slider, .altura-slider{
+        height:1px;
+		width: 100%;
+		outline:none;
+	    }
+	.input-number{
+		height: 25px;
+		width: 90px;
+		margin-left:20px;
+		font-size:20px;
+  }
+	.botao-calcular{
+	    font-size:18px;
+	    width:100%;
+        padding: 6px;
+	    background-color: #1b2845;
+	    /*muda a cor do conteúdo do botão*/
+	    color: white;
+	    cursor: pointer;
+	    border:none;
+        /*centralizando o texto*/
+        text-align: center; 
+
+	}
+	

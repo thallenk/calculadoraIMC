@@ -1,0 +1,39 @@
+<html>
+<!--<> </> = são chamadas de tags.-->
+<!--o head é utilizado para importar scripts js, css, etc.-->
+	<head>
+				<!--Importando o arquivo CSS.-->
+        <link rel="stylesheet" type="text/css" href="template.css" media="screen" />
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+	<!-- O body é utilizado para realmente escrever o corpo do site.-->
+	<body>
+
+		<!-- o div é utilizado para agrupar informações.-->
+		<div class="container">
+			<h1>Calculo de IMC</h1>
+			<form> 
+				<div class="container-calculadora-peso">
+					<p>Digite o seu peso</p>
+					<!-- botão, texto, range, number
+					<input class="altura-slider" type= "range"/>-->
+					<input id="peso" class="input-number" type="number"/>
+					<span>Kg</span>
+					
+				</div>
+				<div class="container-calculadora-altura"> 
+					<p>Digite a sua altura</p>
+					<input id="altura" class="input-number" type= "number"/>
+					<span>m</span>
+
+				</div>
+				<div>
+					<button id="btnCalcular"  type="button" class="botao-calcular"   onclick="calculandoIMC()">Calcular</button>
+				</div>
+			</forms>
+			<div id="resultado"></div>
+		</div>
+		
+	</body>
+
+</html>
